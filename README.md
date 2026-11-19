@@ -31,12 +31,4 @@ Windows 11의 우클릭 메뉴를 Windows 10 스타일의 클래식 메뉴로 �
 - **Windows 11 기본 메뉴 복원**은 두 경로 모두 확인해, (기본값)이 빈 문자열이거나 값과 하위 키가 비어 있는 `InprocServer32` 키를 제거합니다. 기존 `86ca1aa0`만 남은 경우에도 해당 키를 제거합니다. 상위 CLSID 키는 값과 하위 키가 하나도 남지 않았을 때만 제거합니다.
 - DLL 경로, 추가 값 또는 하위 키처럼 예상 밖의 데이터가 `InprocServer32`에 있으면 **확인 필요**를 표시하고 변경을 막습니다. 모든 변경은 현재 사용자(`HKEY_CURRENT_USER`) 범위에서 이루어집니다.
 
-## 빌드
-
-x64 Developer PowerShell에서 Windows SDK와 MSVC를 사용해 아래 명령을 실행합니다. 기본 출력은 `.build\ContextMenuToggler.exe`입니다.
-
-```powershell
-.\build.ps1
-```
-
 제작자 [Troll_Kim](https://github.com/Kimtroll84)
