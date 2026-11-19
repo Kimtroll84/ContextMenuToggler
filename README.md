@@ -6,7 +6,7 @@ Windows 11의 우클릭 메뉴를 Windows 10 스타일의 클래식 메뉴로 �
 
 ## 다운로드 및 사용법
 
-1. [앱 배포 페이지](https://github.com/Kimtroll84/ContextMenuToggler/releases)에서 `ContextMenuToggler.exe`를 내려받아 실행합니다. Windows 11 x64용 단일 실행 파일이며 설치와 관리자 권한이 필요하지 않습니다.
+1. [앱 배포 페이지](https://github.com/Kimtroll84/ContextMenuToggler/releases)에서 `ContextMenuToggler.zip`을 내려받아 압축을 푼 뒤, `ContextMenuToggler.exe`를 실행합니다. Windows 11 x64용 단일 실행 파일이며 설치와 관리자 권한이 필요하지 않습니다.
 2. **Windows 클래식 메뉴 적용** 또는 **Windows 11 기본 메뉴 복원**을 선택합니다.
 3. 바로 반영하려면 **지금 재시작**을 선택해 Windows 탐색기를 다시 시작합니다. **나중에**를 선택해도 설정은 유지됩니다.
 
