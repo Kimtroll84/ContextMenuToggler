@@ -1,0 +1,50 @@
+#include <winres.h>
+#include "resource.h"
+
+#define STRINGIFY_IMPL(value) #value
+#define STRINGIFY(value) STRINGIFY_IMPL(value)
+#define VERSION_TEXT STRINGIFY(APP_MAJOR) "." STRINGIFY(APP_MINOR) "." STRINGIFY(APP_PATCH)
+
+1 RT_MANIFEST "src\\app.manifest"
+APP_ICON ICON "assets\\app.ico"
+PORTRAIT_CHECK RCDATA "assets\\check.png"
+PORTRAIT_CLASSIC RCDATA "assets\\classic.png"
+PORTRAIT_DEFAULT RCDATA "assets\\default.png"
+PORTRAIT_AUTHOR RCDATA "assets\\author.png"
+
+PORTRAIT_INCOMPLETE RCDATA "assets\\incomplete.png"
+
+1 VERSIONINFO
+FILEVERSION APP_MAJOR, APP_MINOR, APP_PATCH, 0
+PRODUCTVERSION APP_MAJOR, APP_MINOR, APP_PATCH, 0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Troll_Kim"
+            VALUE "FileDescription", "Context Menu Toggler"
+            VALUE "FileVersion", VERSION_TEXT
+            VALUE "OriginalFilename", "ContextMenuToggler.exe"
+            VALUE "ProductName", "Context Menu Toggler"
+            VALUE "ProductVersion", VERSION_TEXT
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
+
+DIALOG_RESTART DIALOGEX 0, 0, 180, 64
+STYLE DS_MODALFRAME | DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION ""
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT "", RESTART_PROMPT, 0, 0, 175, 32, SS_NOPREFIX
+    PUSHBUTTON "", IDYES, 0, 40, 50, 14
+    DEFPUSHBUTTON "", IDCANCEL, 60, 40, 50, 14
+END

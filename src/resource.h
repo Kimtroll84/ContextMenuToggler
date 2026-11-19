@@ -1,0 +1,15 @@
+#pragma once
+
+#define APP_MAJOR 1
+#define APP_MINOR 0
+#define APP_PATCH 0
+
+#define APP_ICON 101
+#define PORTRAIT_CHECK 110
+#define PORTRAIT_CLASSIC 111
+#define PORTRAIT_DEFAULT 112
+#define PORTRAIT_AUTHOR 113
+#define PORTRAIT_INCOMPLETE 114
+
+#define DIALOG_RESTART 120
+#define RESTART_PROMPT 121
